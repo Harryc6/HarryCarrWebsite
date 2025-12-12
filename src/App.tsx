@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Analytics } from "@vercel/analytics/react"
 
 import {
     ColorScheme,
@@ -35,6 +36,7 @@ function App() {
                         </Route>
                     </Routes>
                 </BrowserRouter>
+                <Analytics />
             </MantineProvider>
         </ColorSchemeProvider>
     )
